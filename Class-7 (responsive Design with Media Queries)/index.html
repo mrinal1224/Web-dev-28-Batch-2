@@ -54,11 +54,123 @@
         color: #f4a261;
       }
 
+       /* Hero Section */
+       .hero {
+        background-image: url("https://via.placeholder.com/1920x800");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 5rem 2rem;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero .btn {
+        background-color: #f4a261;
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .hero .btn:hover {
+        background-color: #e76f51;
+      }
+
+      /* Menu Section */
+      .menu-section {
+        padding: 3rem 2rem;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .menu-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .menu-item {
+        background-color: #f4f4f4;
+        padding: 1.5rem;
+        border-radius: 10px;
+        width: 200px;
+      }
+
+      .menu-item h3 {
+        margin-bottom: 1rem;
+        color: #e76f51;
+      }
+
+      /* About Section */
+      .about-section {
+        padding: 3rem 2rem;
+        background-color: #f4a261;
+        color: white;
+        text-align: center;
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-section p {
+        font-size: 1.2rem;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        padding: 3rem 2rem;
+        background-color: #333;
+        color: white;
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .contact-section p {
+        font-size: 1.2rem;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
       /* Media Queries */
 
       @media(max-width:768px){
         header{
             flex-direction: column;
+        }
+
+        header nav ul{
+            flex-direction: column;
+
         }
 
 
@@ -77,5 +189,53 @@
     </ul>
       </nav>
     </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Your favorite place for the best food in town.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+      </section>
+  
+      <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Delicious cheesy pizza with fresh toppings.</p>
+          </div>
+          <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Juicy Burger with fresh lettuce and tomato.</p>
+          </div>
+          <div class="menu-item">
+            <h3>Pasta</h3>
+            <p>Creamy pasta with rich flavors and herbs.</p>
+          </div>
+          <div class="menu-item">
+            <h3>Salad</h3>
+            <p>Fresh garden salad with a variety of vegetables.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+          Delicious Bites has been serving the community with the best food since
+          1990. Our commitment to quality and taste is unmatched. Come experience
+          the taste of excellence!
+        </p>
+      </section>
+  
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          Visit us at 123 Food Street, Flavor Town, or call us at (123) 456-7890.
+        </p>
+      </section>
+  
+      <footer>
+        <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+      </footer>
   </body>
 </html>
