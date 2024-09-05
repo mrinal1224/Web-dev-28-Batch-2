@@ -168,13 +168,52 @@
             flex-direction: column;
         }
 
-        header nav ul{
+        header ul {
             flex-direction: column;
-
+            align-items: flex-start;
         }
 
 
       }
+
+      @media (max-width: 480px) {
+        header {
+          padding: 1rem;
+        }
+
+        header .logo {
+          font-size: 1.2rem;
+        }
+
+        header nav ul li a {
+          padding: 0.5rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .hero .btn {
+          padding: 0.8rem 1.5rem;
+        }
+
+        .menu-section h2,
+        .about-section h2,
+        .contact-section h2 {
+          font-size: 1.5rem;
+        }
+
+        .about-section p,
+        .contact-section p {
+          font-size: 1rem;
+        }
+      }
+
+
     </style>
   </head>
   <body>

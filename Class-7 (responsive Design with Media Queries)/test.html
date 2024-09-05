@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <style>
+    /* General styles for all devices */
+    body {
+      font-size: 16px;
+      margin: 20px;
+    }
+
+    @media(max-width:600px){
+        body{
+            background-color: lightcoral;
+        }
+    }
+
+
+    @media(min-width:1200px){
+        body{
+            background-color: blue;
+        }
+    }
+
+    @media(min-width:700px) and (max-width : 900px){
+        body{
+            background-color:red ;
+        }
+    }
+
+
+ 
+
+  
+  </style>
+</head>
+<body>
+  <h1>Responsive Design Example</h1>
+  <p>This is a simple example demonstrating responsiveness using media queries.</p>
+</body>
+</html>
