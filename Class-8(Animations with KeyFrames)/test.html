@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path Animation</title>
+    <style>
+        .shape {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            transition: clip-path 2s ease-in-out;
+        }
+
+        .shape.triangle {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        .shape.circle {
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        /* Trigger the shape change */
+        .shape:hover {
+            clip-path: circle(50% at 50% 50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="shape triangle"></div>
+
+<script>
+    // On hover, we'll morph the shape from triangle to circle
+    document.querySelector('.shape').addEventListener('mouseover', function () {
+        this.classList.toggle('circle');
+    });
+</script>
+
+</body>
+</html>
