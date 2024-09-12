@@ -18,8 +18,17 @@
 
 // console.log(a)
 
-let a = 'Scaler'
+// let a = 'Scaler'
 
-let a = 12345
+// console.log(a)
 
-console.log(a)
+// a = 12345
+// console.log(a)
+
+
+const c = 123
+
+c = 456
+
+console.log(c)
+
