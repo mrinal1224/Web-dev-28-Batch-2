@@ -26,9 +26,15 @@
 // console.log(a)
 
 
-const c = 123
+// const c = 123
 
-c = 456
+// c = 456
 
-console.log(c)
+// console.log(c)
 
+var a = 1200
+
+var a = 1400
+
+
+a = 1300
