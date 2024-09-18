@@ -89,15 +89,7 @@ img{
     text-align: center;
 }
 
-.gallery {
-    padding: 50px 20px;
-    text-align: center;
-}
 
-.gallery-images {
-    display: flex;
-    justify-content: space-between;
-}
 
 .testimonials {
     padding: 50px 20px;
@@ -152,7 +144,7 @@ footer {
 }
 
 /* Responsive Design */
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .menu-items, .gallery-images {
         flex-direction: column;
         align-items: center;
@@ -235,4 +227,4 @@ footer {
     footer p {
         font-size: 12px;
     }
-} */
+}
