@@ -1,42 +1,76 @@
-// Arrays 
-// an orderd collection of data - index
-
-// let evenNums = [2 , 'scaler', true , 'a' , 10 , 12]
-
-// console.log(evenNums)
-
-// let multipliedArr = []
-
-// for(let i=0 ; i<evenNums.length ; i++ ){
-//       multipliedArr.push(evenNums[i]*2)
-// }
-
-// console.log(multipliedArr)
-
-
-
-
-let cars = ['BMW' , 'Porshe' , 'Ferrari' , 'Mercedes']
+let cars = ['BMW', 'Porshe', 'Ferrari', 'Mercedes'];
 
 // Push
+cars.push('Bentley');
+console.log(cars); // ['BMW', 'Porshe', 'Ferrari', 'Mercedes', 'Bentley']
 
-cars.push('bentley')
+// Pop
+const firstDeletedCar = cars.pop();
+console.log(firstDeletedCar); // 'Bentley'
+console.log(cars); // ['BMW', 'Porshe', 'Ferrari', 'Mercedes']
 
-console.log(cars)
+// Unshift
+cars.unshift('Urus');
+console.log(cars); // ['Urus', 'BMW', 'Porshe', 'Ferrari', 'Mercedes']
 
-// pop
+// Shift
+cars.shift();
+console.log(cars); // ['BMW', 'Porshe', 'Ferrari', 'Mercedes']
 
-const firstDeletedCar = cars.pop()
-console.log(firstDeletedCar)
+// forEach
+cars.forEach((car, index) => {
+  console.log(`Car ${index + 1}: ${car}`);
+});
 
-console.log(cars)
+// includes
+const hasFerrari = cars.includes('Ferrari');
+console.log(hasFerrari); // true
 
-// unshift
+// indexOf
+const indexOfPorshe = cars.indexOf('Porshe');
+console.log(indexOfPorshe); // 1
 
-cars.unshift('Urus')
-console.log(cars)
+// slice
+const selectedCars = cars.slice(1, 3);
+console.log(selectedCars); // ['Porshe', 'Ferrari']
 
-// shift
+// splice (remove and add items)
+cars.splice(2, 1, 'Lamborghini'); // Removes 'Ferrari' and adds 'Lamborghini'
+console.log(cars); // ['BMW', 'Porshe', 'Lamborghini', 'Mercedes']
 
-cars.shift()
-console.log(cars)
+// concat
+const moreCars = ['Audi', 'Jaguar'];
+const allCars = cars.concat(moreCars);
+console.log(allCars); // ['BMW', 'Porshe', 'Lamborghini', 'Mercedes', 'Audi', 'Jaguar']
+
+// join
+const carsString = cars.join(', ');
+console.log(carsString); // 'BMW, Porshe, Lamborghini, Mercedes'
+
+// reverse
+const reversedCars = cars.slice().reverse(); // Using slice to avoid modifying original array
+console.log(reversedCars); // ['Mercedes', 'Lamborghini', 'Porshe', 'BMW']
+
+// map
+const upperCaseCars = cars.map(car => car.toUpperCase());
+console.log(upperCaseCars); // ['BMW', 'PORSHE', 'LAMBORGHINI', 'MERCEDES']
+
+// filter
+const carsWithR = cars.filter(car => car.includes('r'));
+console.log(carsWithR); // ['Porshe', 'Lamborghini', 'Mercedes']
+
+// find
+const findCarWithB = cars.find(car => car.startsWith('B'));
+console.log(findCarWithB); // 'BMW'
+
+// some
+const someCarsStartWithP = cars.some(car => car.startsWith('P'));
+console.log(someCarsStartWithP); // true
+
+// every
+const everyCarHasLetterE = cars.every(car => car.includes('e'));
+console.log(everyCarHasLetterE); // false
+
+// sort
+const sortedCars = cars.slice().sort(); // Using slice to avoid modifying original array
+console.log(sortedCars); // ['BMW', 'Lamborghini', 'Mercedes', 'Porshe']
