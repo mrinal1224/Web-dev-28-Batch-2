@@ -1,51 +1,33 @@
 let radiuses = [1 ,2 ,4 ,6 ,8]
 // Area - new array 
 
-function calculateArea(radiusArr){
-  let areaArr = []
+function calculateArea(radius){
+    return 3.14 * radius*radius
+}
+
+function calculateCircumference(radius){
+    return 2*3.14*radius
+}
+
+
+function calculateDiameter(radius){
+    return 2*radius
+}
+
+function calculate(radiusArr , logic){
+  let newArr = []
 
   for(let i=0 ; i<radiusArr.length ; i++){
-     areaArr.push(3.14 * radiusArr[i]*radiusArr[i])
+     newArr.push(logic(radiusArr[i]))
   }
-  return areaArr
+  return newArr
 }
 
-let finalAreas = calculateArea(radiuses)
+let areas = calculate(radiuses ,calculateArea )
+let diameters = calculate(radiuses ,calculateDiameter )
+let circumferences = calculate(radiuses ,calculateCircumference )
 
-console.log('Radiuses' , radiuses)
+console.log(areas)
+console.log(diameters)
+console.log(circumferences)
 
-console.log('Areas ' , finalAreas)
-
-//Diameter- new array
-
-
-function calculateDiameter(radiusArr){
-    let diameterArr = []
-
-   for(let i=0 ; i<radiusArr.length ; i++){
-    diameterArr.push(2* radiusArr[i])
-   }
-
-   return diameterArr
-}
-
-let finalDiameters = calculateDiameter(radiuses)
-console.log('Diameters', finalDiameters)
-
-
-
-// Circumference- new array
-
-function calculateCircumference(radiusArr){
-    let circumArr = []
-
-   for(let i=0 ; i<radiusArr.length ; i++){
-    circumArr.push(2*3.14*radiusArr[i])
-   }
-
-   return circumArr
-}
-
-let finalCircumferences = calculateCircumference(radiuses)
-
-console.log('Circumferences' , finalCircumferences)
