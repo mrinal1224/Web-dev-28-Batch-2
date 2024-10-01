@@ -14,14 +14,14 @@ function calculateDiameter(radius){
     return 2*radius
 }
 
-function calculate(radiusArr , logic){
+function calculate(radiusArr , cb){
   let newArr = []
 
   for(let i=0 ; i<radiusArr.length ; i++){
-     newArr.push(logic(radiusArr[i]))
+     newArr.push(cb(radiusArr[i]))
   }
   return newArr
-}
+} // higher Order Functions
 
 let areas = calculate(radiuses ,calculateArea )
 let diameters = calculate(radiuses ,calculateDiameter )
