@@ -40,6 +40,20 @@ console.log(numbers)
 
 // Excercise 
 
+const transactions = [1000 , 2000 , 8000 , 4000]
+
+const inrToUsd = 83;
+
+function convert(transaction){
+    return transaction/inrToUsd
+}
+
+
+let convertedAmounts = transactions.map(convert)
+console.log(convertedAmounts)
+
+
+
 
 
 
