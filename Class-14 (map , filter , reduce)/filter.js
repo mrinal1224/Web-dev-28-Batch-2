@@ -37,9 +37,37 @@ console.log(evenNums)
 
 
 
-const transactions = [-1000 , 2000 , 8000 , -4000]
+// const transactions = [-1000 , 2000 , 8000 , -4000]
 
-// Filter out all withdrawls
+// // Filter out all withdrawls
+
+// function getDeposits(amount){
+//     return amount>0 
+// }
+
+// let deposits= transactions.filter(getDeposits)
+
+// console.log(deposits)
+
+
+
+const transactions = [-1000 , 2000 , 8000 , -4000 , 5000]
+
+// get Depoists and calucalte total sum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
