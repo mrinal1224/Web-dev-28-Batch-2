@@ -1,6 +1,5 @@
 // let numbers = [1 ,2 ,3 ,4,5]
 
-
 // function sumAll(arr){
 //     let sum = 0
 
@@ -14,19 +13,11 @@
 // let sumFinal = sumAll(numbers)
 // console.log(sumFinal)
 
+let nums = [1, 2, 3, 4, 5];
 
-let nums = [1 ,2 ,3 ,4,5]
+let sum = nums.reduce(function(acc, currEle) {
+  acc = acc * currEle;
+  return acc;
+},1);
 
-
-
-
-function sumAll(acc ,currEle ){
-  acc = acc*currEle
-  return acc
-}
-
-let sum = nums.reduce(sumAll ,1)
-
-console.log("From Reduce", sum)
-
-
+console.log("From Reduce", sum);

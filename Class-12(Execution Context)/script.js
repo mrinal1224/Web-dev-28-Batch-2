@@ -1,20 +1,13 @@
 var a=10;
 
-
-
-var b = 12
-
-
-function add(m ,n){
-   var sum = m+n
-   return sum
+function sqaure(m){
+   var sqr = m*m
+   return sqr
 }
 
+const sqaure1 =sqaure(a)
+const sqaure2 = sqaure(4)
 
 
-const sum1 = add(a , b)
-const sum2 = add(4,5)
-
-
-console.log(sum1) // 22
-console.log(sum2) // 9
+console.log(sqaure1) 
+console.log(sqaure2) 

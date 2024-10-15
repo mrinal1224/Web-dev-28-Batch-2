@@ -20,5 +20,9 @@ console.log(deposits)
 
 
 
-
+// ForEach
+// Every
+// some 
+// find
+// findIndex
 
