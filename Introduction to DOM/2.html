@@ -16,7 +16,7 @@
       <li>4</li>
       <li>5</li>
       <li>6</li>
-
+    
       <li>8</li>
       <li>9</li>
       <li>10</li>
@@ -26,7 +26,38 @@
 
     <script>
       // Fix the list by inserting the missing element using querySelectorAll and insertBefor
+      let fixBtn = document.querySelector('#btn-1')
+      console.log(fixBtn)
+
+
+      fixBtn.addEventListener('click' , function(){
+        let allListItems = document.querySelectorAll('li')
+        console.log(allListItems)
+
+        let eightElement = allListItems[6]
+        console.log(eightElement)
+
+        let sevenElement = document.createElement('li')
+        sevenElement.innerText ='7'
+
+        let myList = document.querySelector('ul')
+
+        myList.insertBefore(sevenElement , eightElement)
+
+
+
+
+
+        
+      })
+
       
+
+
+
+
+
+
     </script>
   </body>
 </html>
