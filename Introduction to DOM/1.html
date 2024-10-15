@@ -20,7 +20,11 @@
 
        // event Listeners
        btn.addEventListener('click' , function(){
-         console.log('Button Clicked')
+          let helloDiv = document.createElement('div')
+          helloDiv.innerText = 'Hello'
+          
+          let bodyElem = document.querySelector('body')
+          bodyElem.appendChild(helloDiv)
        })
 
 
