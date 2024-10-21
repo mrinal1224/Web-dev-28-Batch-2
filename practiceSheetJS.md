@@ -1,5 +1,3 @@
-
-
 ### Array Questions
 
 1. **Reverse Array:**
